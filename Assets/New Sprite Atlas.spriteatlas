@@ -75,6 +75,7 @@ SpriteAtlas:
   - {fileID: 5327950094024008212, guid: 4d8eb5e96b1d1e54392c01fd12afcdfb, type: 3}
   - {fileID: 6913638643635410091, guid: 4d8eb5e96b1d1e54392c01fd12afcdfb, type: 3}
   - {fileID: 3235062197104327778, guid: 4d8eb5e96b1d1e54392c01fd12afcdfb, type: 3}
+  - {fileID: 2495676471409746333, guid: 4d8eb5e96b1d1e54392c01fd12afcdfb, type: 3}
   - {fileID: -9198928466637730507, guid: 4d8eb5e96b1d1e54392c01fd12afcdfb, type: 3}
   - {fileID: 3628468241054914511, guid: 4d8eb5e96b1d1e54392c01fd12afcdfb, type: 3}
   - {fileID: -3513202607186615407, guid: 4d8eb5e96b1d1e54392c01fd12afcdfb, type: 3}
@@ -158,6 +159,7 @@ SpriteAtlas:
   - Shirne_Top
   - S-Crate_1
   - S-Crate_0
+  - Monster_1
   - C-floor_2
   - C-floor_0
   - C-floor_1

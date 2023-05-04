@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Diagnostics;
+using System.Net.NetworkInformation;
 using System.Threading;
 using UnityEngine;
 
@@ -32,6 +33,24 @@ public class Weapon : Collidable
                 lastSwing = Time.time;
                 Swing();
             }
+        }
+    }
+
+    protected override void OnCollide(Collider2D coll)
+    {
+        if (coll.tag == "Fighter")
+        {
+            if (coll.name != "Player")
+            {
+                UnityEngine.Debug.Log(coll.name);
+            }
+            Damage dmg = new Damage
+            {
+                damageAmount = damagePoint,
+                origin = transform.position,
+                pushForce = pushForce
+            };
+            coll.SendMessage("ReceiveDamage", dmg);
         }
     }
 
