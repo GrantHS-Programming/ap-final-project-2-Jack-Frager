@@ -14,7 +14,7 @@ public class Fighter : MonoBehaviour
 
     protected Vector3 pushDirection;
 
-    protected virtual void RecieveDamage(Damage dmg)
+    protected virtual void ReceiveDamage(Damage dmg)
     {
         if (Time.time - lastImmune > immuneTime)
         {
@@ -22,7 +22,7 @@ public class Fighter : MonoBehaviour
             hitPoint -= dmg.damageAmount;
             pushDirection = (transform.position - dmg.origin).normalized * dmg.pushForce;
 
-            GameManager.instance.ShowText(dmg.damageAmount.ToString(), 50, Color.red, transform.position, Vector3.zero, 0.5f);
+            GameManager.instance.ShowText(dmg.damageAmount.ToString(), 30, Color.red, transform.position, Vector3.zero, 0.5f);
 
             if(hitPoint <= 0)
             {
@@ -34,7 +34,7 @@ public class Fighter : MonoBehaviour
 
     protected virtual void Death()
     {
-
+        UnityEngine.Debug.Log("Dead");
     }
 
 

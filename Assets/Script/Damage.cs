@@ -1,9 +1,6 @@
-using System.Collections;
-using System.Collections.Generic;
-using System.Collections.Specialized;
 using UnityEngine;
 
-public class Damage : MonoBehaviour
+public struct Damage 
 {
 
     public Vector3 origin;

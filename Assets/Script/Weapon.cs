@@ -40,9 +40,9 @@ public class Weapon : Collidable
     {
         if (coll.tag == "Fighter")
         {
-            if (coll.name != "Player")
+            if (coll.name == "Player")
             {
-                UnityEngine.Debug.Log(coll.name);
+                return;
             }
             Damage dmg = new Damage
             {
@@ -50,7 +50,7 @@ public class Weapon : Collidable
                 origin = transform.position,
                 pushForce = pushForce
             };
-            coll.SendMessage("ReceiveDamage", dmg);
+            coll.gameObject.SendMessage("ReceiveDamage", dmg);
         }
     }
 
