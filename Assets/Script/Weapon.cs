@@ -9,6 +9,7 @@ public class Weapon : Collidable
 {
     public int damagePoint = 1;
     public float pushForce = 2.0f;
+    private Animator anim;
 
     public int weaponLevel = 0;
     private SpriteRenderer spriteRenderer;
@@ -21,6 +22,7 @@ public class Weapon : Collidable
     {
         base.Start();
         spriteRenderer = GetComponent<SpriteRenderer>();
+        anim = GetComponent<Animator>();
     }
 
     protected override void Update()
@@ -56,7 +58,7 @@ public class Weapon : Collidable
 
     private void Swing()
     {
-        UnityEngine.Debug.Log("Swing");
+        anim.SetTrigger("Swing");
     }
 
 }
