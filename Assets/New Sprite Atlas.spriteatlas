@@ -55,6 +55,7 @@ SpriteAtlas:
   - {fileID: -5657005582927067749, guid: 4d8eb5e96b1d1e54392c01fd12afcdfb, type: 3}
   - {fileID: 2526274175933715322, guid: 4d8eb5e96b1d1e54392c01fd12afcdfb, type: 3}
   - {fileID: -6613792370922084840, guid: 4d8eb5e96b1d1e54392c01fd12afcdfb, type: 3}
+  - {fileID: -8316447183620893927, guid: 4d8eb5e96b1d1e54392c01fd12afcdfb, type: 3}
   - {fileID: -2386295036631077607, guid: 4d8eb5e96b1d1e54392c01fd12afcdfb, type: 3}
   - {fileID: -6026731920720571777, guid: 4d8eb5e96b1d1e54392c01fd12afcdfb, type: 3}
   - {fileID: 620111541035404702, guid: 4d8eb5e96b1d1e54392c01fd12afcdfb, type: 3}
@@ -139,6 +140,7 @@ SpriteAtlas:
   - weapon4
   - weapon6
   - R-Shade 3
+  - Menu_Button
   - R-Shade 2
   - R-Shade 1
   - R-Shade 0
