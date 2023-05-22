@@ -13,7 +13,10 @@ public class Player : Mover
         UpdateMotor(new Vector3(x, y, 0));
     }
 
-
+    public void SwapSprite(int skinId)
+    {
+        GetComponent<SpriteRenderer>().sprite = GameManager.instance.playerSprite[skinId];
+    }
 
 
 }
