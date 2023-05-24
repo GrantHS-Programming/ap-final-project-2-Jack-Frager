@@ -82,6 +82,21 @@ public class GameManager : MonoBehaviour
         }
         return xp;
     }
+    public void GrantXp(int xp)
+    {
+        int currLevel = GetCurrentLevel();
+        experience += xp;
+        if (currLevel < GetCurrentLevel())
+        {
+            OnLevelUp();
+        }
+    }
+    public void OnLevelUp()
+    {
+        UnityEngine.Debug.Log("Leveled up to " + GetCurrentLevel());
+        player.OnLevelUp();
+    }
+     
 
     //Game Save
     public void SaveState()
@@ -107,10 +122,12 @@ public class GameManager : MonoBehaviour
         //Change Skin - To Do
         dollars = int.Parse(data[1]);
         experience = int.Parse(data[2]);
+        if(GetCurrentLevel() != 1)
+            player.SetLevel(GetCurrentLevel());
         //Change Weapon Lvl
         weapon.SetWeaponLevel(int.Parse(data[3]));
 
-
+        player.transform.position = GameObject.Find("SpawnPoint").transform.position;
 
 
 

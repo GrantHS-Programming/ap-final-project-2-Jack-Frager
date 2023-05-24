@@ -5,6 +5,12 @@ using UnityEngine;
 
 public class Player : Mover
 {
+    protected override void Start()
+    {
+        base.Start();
+        DontDestroyOnLoad(gameObject);
+    }
+
     private void FixedUpdate()
     {
         float x = Input.GetAxisRaw("Horizontal");
@@ -16,6 +22,16 @@ public class Player : Mover
     public void SwapSprite(int skinId)
     {
         GetComponent<SpriteRenderer>().sprite = GameManager.instance.playerSprite[skinId];
+    }
+    public void OnLevelUp()
+    {
+        maxHitPoint += 2;
+        hitPoint = maxHitPoint;
+    }
+    public void SetLevel(int level)
+    {
+        for (int i = 0; i < level; i++)
+            OnLevelUp();
     }
 
 

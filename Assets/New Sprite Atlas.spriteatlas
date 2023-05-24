@@ -78,6 +78,7 @@ SpriteAtlas:
   - {fileID: 3235062197104327778, guid: 4d8eb5e96b1d1e54392c01fd12afcdfb, type: 3}
   - {fileID: 2495676471409746333, guid: 4d8eb5e96b1d1e54392c01fd12afcdfb, type: 3}
   - {fileID: -9198928466637730507, guid: 4d8eb5e96b1d1e54392c01fd12afcdfb, type: 3}
+  - {fileID: -7013733424125015739, guid: 4d8eb5e96b1d1e54392c01fd12afcdfb, type: 3}
   - {fileID: 3628468241054914511, guid: 4d8eb5e96b1d1e54392c01fd12afcdfb, type: 3}
   - {fileID: -3513202607186615407, guid: 4d8eb5e96b1d1e54392c01fd12afcdfb, type: 3}
   - {fileID: -7826287199498012479, guid: 4d8eb5e96b1d1e54392c01fd12afcdfb, type: 3}
@@ -163,6 +164,7 @@ SpriteAtlas:
   - S-Crate_0
   - Monster_1
   - C-floor_2
+  - Reset_Button
   - C-floor_0
   - C-floor_1
   - Floor_0

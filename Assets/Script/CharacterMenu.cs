@@ -16,6 +16,7 @@ public class CharacterMenu : MonoBehaviour
     public Image weaponSprite;
     public RectTransform xpBar;
 
+
     //character select
     public void OnArrowClick(bool right)
     {
@@ -52,6 +53,15 @@ public class CharacterMenu : MonoBehaviour
         if (GameManager.instance.TryUpgradeWeapon())
             UpdateMenu();
     }
+    public void Reset()
+    {
+        string s = "";
+
+        s += "0" + "|" + "0" + "|" + "0" + "|" + "0";
+
+
+        PlayerPrefs.SetString("SaveState", s);
+    }
 
     //update info
     public void UpdateMenu()
@@ -71,7 +81,7 @@ public class CharacterMenu : MonoBehaviour
         //xp bar
         if (GameManager.instance.GetCurrentLevel() == GameManager.instance.xpTable.Count)
         {
-            xpText.text = GameManager.instance.experience.ToString() + " total experience points";
+            xpText.text = GameManager.instance.experience.ToString() + " Total XP";
             xpBar.localScale = Vector3.one;
         }
         else
@@ -80,8 +90,12 @@ public class CharacterMenu : MonoBehaviour
             int CurrLevelXp = GameManager.instance.GetXpToLevel(GameManager.instance.GetCurrentLevel());
             int diff = CurrLevelXp - prevLevelXp;
             int currXpIntoLevel = GameManager.instance.experience - prevLevelXp;
+
+            float completionRatio = (float)currXpIntoLevel / (float)diff;
+            xpBar.localScale = new Vector3(completionRatio, 1, 1);
+            xpText.text = currXpIntoLevel.ToString() + " / " + diff;
         }
-        xpText.text = "No Implement";
+
 
 
 
