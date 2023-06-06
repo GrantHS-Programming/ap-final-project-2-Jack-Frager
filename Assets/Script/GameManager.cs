@@ -14,12 +14,13 @@ public class GameManager : MonoBehaviour
             Destroy(gameObject);
             Destroy(player.gameObject);
             Destroy(floatingTextManager.gameObject);
+            Destroy(hud);
+            Destroy(menu);
             return;
         }
  
         instance = this;
         SceneManager.sceneLoaded += LoadState;
-        DontDestroyOnLoad(gameObject);
     }
 
     //Resources
@@ -32,6 +33,9 @@ public class GameManager : MonoBehaviour
     public Player player;
     public Weapon weapon;
     public FloatingTextManager floatingTextManager;
+    public RectTransform hitPointBar;
+    public GameObject hud;
+    public GameObject menu;
 
     //Logic
     public int dollars;
@@ -56,6 +60,14 @@ public class GameManager : MonoBehaviour
             return true;
         }
         return false;
+    }
+
+    //hitpoint bar
+    public void OnHitPointChange()
+    {
+        float ratio = (float)player.hitPoint / (float)player.maxHitPoint;
+        hitPointBar.localScale = new Vector3(1, ratio, 1);
+
     }
 
     //Experience
