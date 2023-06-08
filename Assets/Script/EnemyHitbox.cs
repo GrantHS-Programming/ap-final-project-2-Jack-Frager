@@ -15,7 +15,8 @@ public class EnemyHitbox : Collidable
             {
                 damageAmount = damage,
                 origin = transform.position,
-                pushForce = pushForce
+                pushForce = pushForce,
+                collide = coll
             };
             coll.gameObject.SendMessage("ReceiveDamage", dmg);
         }

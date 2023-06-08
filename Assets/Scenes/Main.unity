@@ -16579,6 +16579,16 @@ MonoBehaviour:
   playerSprite:
   - {fileID: 4018074224661003100, guid: 4d8eb5e96b1d1e54392c01fd12afcdfb, type: 3}
   - {fileID: -4869357254534750094, guid: 4d8eb5e96b1d1e54392c01fd12afcdfb, type: 3}
+  - {fileID: -3040026052974905139, guid: 4d8eb5e96b1d1e54392c01fd12afcdfb, type: 3}
+  - {fileID: -22031193460720863, guid: 4d8eb5e96b1d1e54392c01fd12afcdfb, type: 3}
+  - {fileID: 6650110119159395926, guid: 4d8eb5e96b1d1e54392c01fd12afcdfb, type: 3}
+  - {fileID: -2512490208455336206, guid: 4d8eb5e96b1d1e54392c01fd12afcdfb, type: 3}
+  - {fileID: -1463246288967468283, guid: 4d8eb5e96b1d1e54392c01fd12afcdfb, type: 3}
+  - {fileID: 8695639650983408100, guid: 4d8eb5e96b1d1e54392c01fd12afcdfb, type: 3}
+  - {fileID: -860242014750141174, guid: 4d8eb5e96b1d1e54392c01fd12afcdfb, type: 3}
+  - {fileID: -1073855337090870336, guid: 4d8eb5e96b1d1e54392c01fd12afcdfb, type: 3}
+  - {fileID: -4098169810922336603, guid: 4d8eb5e96b1d1e54392c01fd12afcdfb, type: 3}
+  - {fileID: -6347788441029451995, guid: 4d8eb5e96b1d1e54392c01fd12afcdfb, type: 3}
   weaponSprite:
   - {fileID: 2114176695594709982, guid: 4d8eb5e96b1d1e54392c01fd12afcdfb, type: 3}
   - {fileID: 2489748775411591063, guid: 4d8eb5e96b1d1e54392c01fd12afcdfb, type: 3}
@@ -20578,7 +20588,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2233937882249342006, guid: 470c9e100dfc4a744b8d2d03e7f6342d, type: 3}
       propertyPath: m_Name
-      value: Monster_1
+      value: Monster
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 470c9e100dfc4a744b8d2d03e7f6342d, type: 3}

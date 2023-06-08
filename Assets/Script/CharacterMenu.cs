@@ -16,7 +16,6 @@ public class CharacterMenu : MonoBehaviour
     public Image weaponSprite;
     public RectTransform xpBar;
 
-
     //character select
     public void OnArrowClick(bool right)
     {
@@ -27,6 +26,7 @@ public class CharacterMenu : MonoBehaviour
             if (currentCharacterSelection == GameManager.instance.playerSprite.Count)
                 currentCharacterSelection = 0;
 
+            GameManager.instance.count++;
             OnSelectionChanged();
         }
         else
@@ -35,6 +35,7 @@ public class CharacterMenu : MonoBehaviour
 
             if (currentCharacterSelection < 0)
                 currentCharacterSelection = GameManager.instance.playerSprite.Count - 1;
+            GameManager.instance.count--;
 
             OnSelectionChanged();
         }
@@ -100,5 +101,7 @@ public class CharacterMenu : MonoBehaviour
 
 
     }
+
+
 
 }

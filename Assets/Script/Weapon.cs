@@ -50,7 +50,8 @@ public class Weapon : Collidable
             {
                 damageAmount = damagePoint[weaponLevel],
                 origin = transform.position,
-                pushForce = pushForce[weaponLevel]
+                pushForce = pushForce[weaponLevel],
+                collide = coll
             };
             coll.gameObject.SendMessage("ReceiveDamage", dmg);
         }

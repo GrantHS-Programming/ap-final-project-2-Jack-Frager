@@ -40,6 +40,7 @@ public class GameManager : MonoBehaviour
     //Logic
     public int dollars;
     public int experience;
+    public int count;
 
     //floating text
     public void ShowText(string msg, int fontSize, Color color, Vector3 position, Vector3 motion, float duration)
@@ -117,10 +118,11 @@ public class GameManager : MonoBehaviour
     {
         string s = "";
 
-        s += "0" + "|";
+        s += count.ToString() + "|";
         s += dollars.ToString() + "|";
         s += experience.ToString() + "|";
         s += weapon.weaponLevel.ToString();
+
 
         PlayerPrefs.SetString("SaveState", s);
     }
@@ -133,7 +135,7 @@ public class GameManager : MonoBehaviour
         }
 
         string[] data = PlayerPrefs.GetString("SaveState").Split('|');
-        //Change Skin - To Do
+        GameManager.instance.player.SwapSprite(int.Parse(data[0]));
         dollars = int.Parse(data[1]);
         experience = int.Parse(data[2]);
         if(GetCurrentLevel() != 1)

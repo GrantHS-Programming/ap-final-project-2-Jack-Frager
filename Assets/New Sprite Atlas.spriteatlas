@@ -103,7 +103,14 @@ SpriteAtlas:
   - {fileID: -407774699277236136, guid: 4d8eb5e96b1d1e54392c01fd12afcdfb, type: 3}
   - {fileID: 7870480730772048316, guid: 4d8eb5e96b1d1e54392c01fd12afcdfb, type: 3}
   - {fileID: -2016447386726003157, guid: 4d8eb5e96b1d1e54392c01fd12afcdfb, type: 3}
+  - {fileID: -1073855337090870336, guid: 4d8eb5e96b1d1e54392c01fd12afcdfb, type: 3}
+  - {fileID: -860242014750141174, guid: 4d8eb5e96b1d1e54392c01fd12afcdfb, type: 3}
+  - {fileID: -2512490208455336206, guid: 4d8eb5e96b1d1e54392c01fd12afcdfb, type: 3}
+  - {fileID: 6650110119159395926, guid: 4d8eb5e96b1d1e54392c01fd12afcdfb, type: 3}
+  - {fileID: 8695639650983408100, guid: 4d8eb5e96b1d1e54392c01fd12afcdfb, type: 3}
+  - {fileID: -1463246288967468283, guid: 4d8eb5e96b1d1e54392c01fd12afcdfb, type: 3}
   - {fileID: -2285114424382770006, guid: 4d8eb5e96b1d1e54392c01fd12afcdfb, type: 3}
+  - {fileID: -22031193460720863, guid: 4d8eb5e96b1d1e54392c01fd12afcdfb, type: 3}
   - {fileID: 4564897580977227239, guid: 4d8eb5e96b1d1e54392c01fd12afcdfb, type: 3}
   - {fileID: -7424474914276003461, guid: 4d8eb5e96b1d1e54392c01fd12afcdfb, type: 3}
   - {fileID: 4596313960938759734, guid: 4d8eb5e96b1d1e54392c01fd12afcdfb, type: 3}
@@ -129,9 +136,12 @@ SpriteAtlas:
   - {fileID: -4869357254534750094, guid: 4d8eb5e96b1d1e54392c01fd12afcdfb, type: 3}
   - {fileID: 4018074224661003100, guid: 4d8eb5e96b1d1e54392c01fd12afcdfb, type: 3}
   - {fileID: -8143584818952536569, guid: 4d8eb5e96b1d1e54392c01fd12afcdfb, type: 3}
+  - {fileID: -3040026052974905139, guid: 4d8eb5e96b1d1e54392c01fd12afcdfb, type: 3}
   - {fileID: 2466828561161279858, guid: 4d8eb5e96b1d1e54392c01fd12afcdfb, type: 3}
   - {fileID: 2185041290902523119, guid: 4d8eb5e96b1d1e54392c01fd12afcdfb, type: 3}
   - {fileID: 2592197434785513267, guid: 4d8eb5e96b1d1e54392c01fd12afcdfb, type: 3}
+  - {fileID: -4098169810922336603, guid: 4d8eb5e96b1d1e54392c01fd12afcdfb, type: 3}
+  - {fileID: -6347788441029451995, guid: 4d8eb5e96b1d1e54392c01fd12afcdfb, type: 3}
   - {fileID: 2489748775411591063, guid: 4d8eb5e96b1d1e54392c01fd12afcdfb, type: 3}
   - {fileID: 2114176695594709982, guid: 4d8eb5e96b1d1e54392c01fd12afcdfb, type: 3}
   - {fileID: -1655761581076612383, guid: 4d8eb5e96b1d1e54392c01fd12afcdfb, type: 3}
@@ -189,7 +199,14 @@ SpriteAtlas:
   - Brick_1
   - Brick_0
   - Collision_Block
+  - Player_9
+  - Player_8
+  - Player_5
+  - Player_4
+  - Player_7
+  - Player_6
   - Torch_8
+  - Player_3
   - B-Flag
   - Torch_2
   - Torch_3
@@ -215,9 +232,12 @@ SpriteAtlas:
   - player_1
   - player_0
   - R-Flag
+  - player_2
   - Pillar_2
   - Pillar_0
   - Pillar_1
+  - Player_10
+  - Player_11
   - weapon1
   - weapon0
   - weapon3
